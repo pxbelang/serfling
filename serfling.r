@@ -12,4 +12,3 @@ x <- data.frame(c(1:600))
 colnames(x) <- c("Week")
 serftmp <- predict(serfreg, newdata = x, interval="confidence", level=0.95)
 write.csv(serftmp, file="c:\\temp\\serfling.csv")
-
